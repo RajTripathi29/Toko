@@ -1,0 +1,632 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+.MsoChpDefault
+	{font-family:"Arial",sans-serif;}
+.MsoPapDefault
+	{line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;!DOCTYPE html&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;html lang=&quot;en&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;head&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;title&gt;Valentine&lt;/title&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;style&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>body {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    margin: 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    font-family: -apple-system,
+BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    background: #0b141a;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    color: white;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    text-align: center;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    overflow-x: hidden;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Glow */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>.glowLayer {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    position: fixed;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    inset: 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    background: radial-gradient(circle at
+center,</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        rgba(255,105,135,0.35),</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        rgba(255,0,90,0.15),</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        rgba(0,0,0,0.6));</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    opacity: 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    transition: opacity 2s ease;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    pointer-events: none;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Container */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>.container {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    padding: 40px 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    margin-top: 20vh;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Question */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>.question {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    font-size: 26px;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    margin-bottom: 25px;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    opacity: 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    animation: fadeIn 1.5s forwards, glow
+2s ease-in-out infinite alternate;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>@keyframes fadeIn { to { opacity: 1; } }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>@keyframes glow {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    from { text-shadow: 0 0 8px
+rgba(255,77,109,0.4); }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    to { text-shadow: 0 0 18px
+rgba(255,77,109,0.9); }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Buttons */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>.buttons {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    opacity: 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    animation: fadeIn 1s forwards;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    animation-delay: 1.6s;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>button {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    font-size: 18px;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    padding: 12px 22px;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    border: none;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    border-radius: 14px;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    margin: 10px;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    cursor: pointer;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    transition: transform 0.25s ease,
+background 0.3s;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>#yesBtn {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    background: #ff4d6d;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    color: white;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    animation: pulse 1.6s infinite;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>#noBtn {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    background: #444;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    color: white;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Pulse */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>@keyframes pulse {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    0% { transform: scale(1); }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    50% { transform: scale(1.08); }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    100% { transform: scale(1); }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Celebration */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>.celebration {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    display: none;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    padding: 40px 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Hearts */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>.heart {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    position: fixed;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    font-size: 22px;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    animation: floatUp linear forwards;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>@keyframes floatUp {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    from { transform: translateY(100vh);
+opacity: 1; }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    to { transform: translateY(-10vh);
+opacity: 0; }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Cat */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>.bounceCat {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    animation: bounce 0.9s infinite
+ease-in-out;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>@keyframes bounce {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    0%,100% { transform: translateY(0); }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    50% { transform: translateY(-14px); }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Sparkles */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>.sparkle {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    position: fixed;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    font-size: 14px;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    animation: twinkle 1.5s ease-in-out
+infinite alternate;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>@keyframes twinkle {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    from { transform: scale(0.7); opacity:
+0.4; }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    to { transform: scale(1.4); opacity: 1;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;/style&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;/head&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;body&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;div class=&quot;glowLayer&quot;
+id=&quot;glowLayer&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;div class=&quot;container&quot;
+id=&quot;proposalBox&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    &lt;h1 class=&quot;question&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        &lt;span
+id=&quot;name&quot;&gt;&lt;/span&gt;, will you be my valentine? ❤️</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    &lt;/h1&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    &lt;div class=&quot;buttons&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        &lt;button
+id=&quot;yesBtn&quot;&gt;Yes&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        &lt;button
+id=&quot;noBtn&quot;&gt;No&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;div class=&quot;celebration&quot;
+id=&quot;celebration&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    &lt;h1&gt;I love youuu ❤️&lt;/h1&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    &lt;img class=&quot;bounceCat&quot;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        
+src=&quot;https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyOTJkdDBwNm94cHJ4Z2lmbWh0dDZpdGV5cGtqb2hzcDU2bjZ6Y3owaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/pAHAgWYYjWIE9DNLcC/200w.webp&quot;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>         width=&quot;240&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;audio id=&quot;bgMusic&quot;
+src=&quot;music.mp3&quot; preload=&quot;auto&quot;&gt;&lt;/audio&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;script&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Typing name */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>const nameText = &quot;Toko&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>let i = 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>const nameSpan =
+document.getElementById(&quot;name&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>function typeName() {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    if (i &lt; nameText.length) {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        nameSpan.textContent +=
+nameText.charAt(i);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        i++;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        setTimeout(typeName, 180);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>typeName();</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Hearts */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>function launchHearts(speed=700) {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    setInterval(() =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        const heart =
+document.createElement(&quot;div&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        heart.className =
+&quot;heart&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        heart.textContent = [&quot;❤️&quot;,&quot;&#128150;&quot;,&quot;&#128149;&quot;,&quot;&#128152;&quot;][Math.floor(Math.random()*4)];</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        heart.style.left = Math.random() *
+100 + &quot;vw&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        heart.style.animationDuration = (4
++ Math.random()*2) + &quot;s&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        document.body.appendChild(heart);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        setTimeout(() =&gt; heart.remove(),
+6000);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    }, speed);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>launchHearts(800);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Sparkles */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>function launchSparkles() {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    setInterval(() =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        const sparkle =
+document.createElement(&quot;div&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        sparkle.className =
+&quot;sparkle&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        sparkle.textContent =
+&quot;✨&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        sparkle.style.left = Math.random()
+* 100 + &quot;vw&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        sparkle.style.top = Math.random() *
+100 + &quot;vh&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        document.body.appendChild(sparkle);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        setTimeout(() =&gt;
+sparkle.remove(), 2000);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    }, 300);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Burger pop */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>function popBurger() {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    const burger =
+document.createElement(&quot;div&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    burger.textContent = &quot;&#127828;&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    burger.style.position =
+&quot;fixed&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    burger.style.left = &quot;50%&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    burger.style.top = &quot;50%&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    burger.style.fontSize =
+&quot;48px&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    burger.style.transform =
+&quot;translate(-50%, -50%) scale(0)&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    burger.style.transition =
+&quot;transform 0.4s ease&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    document.body.appendChild(burger);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    requestAnimationFrame(() =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        burger.style.transform =
+&quot;translate(-50%, -50%) scale(1.4)&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    });</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    setTimeout(() =&gt; burger.remove(),
+900);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Buttons */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>const noTexts = [</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    &quot;bubba please :(&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    &quot;what about McD&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    &quot;will get you burgers&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    &quot;kisses and cuddles?&quot;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>];</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>let noClickCount = 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>const yesBtn =
+document.getElementById(&quot;yesBtn&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>const noBtn =
+document.getElementById(&quot;noBtn&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>noBtn.addEventListener(&quot;click&quot;,
+() =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    if (noClickCount &lt; noTexts.length) {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        noBtn.textContent =
+noTexts[noClickCount];</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    noClickCount++;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    if (noClickCount === 2) popBurger();</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    yesBtn.style.animation =
+&quot;none&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    yesBtn.style.transform = `scale(${1 +
+noClickCount * 0.35})`;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    if (noClickCount &gt;= 4) {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        noBtn.textContent =
+&quot;Yes&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        noBtn.style.background =
+&quot;#ff4d6d&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>        noBtn.onclick = celebrate;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    }</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>});</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>yesBtn.addEventListener(&quot;click&quot;,
+() =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    yesBtn.style.animation =
+&quot;none&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    celebrate();</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>});</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>/* Celebration */</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>function celebrate() {</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    if (navigator.vibrate)
+navigator.vibrate([200,100,200]);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>   
+document.getElementById(&quot;proposalBox&quot;).style.display =
+&quot;none&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>   
+document.getElementById(&quot;celebration&quot;).style.display =
+&quot;block&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>   
+document.getElementById(&quot;glowLayer&quot;).style.opacity = &quot;1&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    const music =
+document.getElementById(&quot;bgMusic&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    music.volume = 0.5;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    music.play().catch(()=&gt;{});</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    launchHearts(250);</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>    launchSparkles();</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>}</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;/script&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;/body&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN>&lt;/html&gt;</span></p>
+
+</div>
+
+</body>
+
+</html>
